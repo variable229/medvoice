@@ -1,0 +1,98 @@
+08/27/15 (12-2)
+- continue design document
+
+08/24/15 (4-6)
+- researched how to receive data from html 
+- design document
+
+08/22/15 (11-3)
+- researched how to transfer data to raspberry pi
+
+08/19/15 (12-2)
+- Design Doc
+
+08/18/15 (12-2)
+- Start Design document
+
+08/15/15 (11-1)
+- Finish SRS Document
+- pi printers
+
+08/12/15 (11-1)
+- SRS Document
+- Research pi printers
+
+08/7/15 (11-2)
+- Set up home printer to raspberry pi
+- able to print from raspberry pi to home printer
+- Set up VNC viewer to view raspberry pi GUI on my macbook pro
+- pi crashed…need to start over.
+
+08/4/15 (12-2)
+- set up static IP address
+- Printer and printing from raspberry pi tutorials
+
+08/1/15 (12-4)
+- Finished SRS Document
+- Learning how to connect printer and print from raspberry pi
+
+7/31/15 (4-8;9-12am)
+- restart SRS, kept previous version for design requirements
+- DEFINE THE PROBLEM
+
+7/30/15 (6-9)
+- install/learn webiopi
+- making an IoT application using Webiopi
+7/24/15 (6-8)
+- tutorial: webiopi
+- begin web interface
+
+7/23/15 (6-8)
+- tutorials: wiringPi
+- tutorials: php, html
+
+7/22/15 (12-3)
+- look into wiringPi
+- webserver interface
+
+7/20/15 (12-3)
+- research LED control via server
+
+7/15/2015 (11-2; 4-8:30)
+- complete tutorials: GPIO Tutorial, Microcontrollers - Introduction to Servos and Understanding Torque, Microcontrollers - introduction to PWM, Servo Control with the Raspberry Pi
+- controlled one servo motor with the raspberry pi
+- took tour of Alva Dynamics
+- met team members
+- assigned to raspberry pi: Made LED blink with GPIO, created web server
+- need to control LED through web server: started researching on internet
+
+7/14/2015 (11-1)
+- continue looking for raspberry pi tutorials
+
+7/13/2015 (12-2)
+- Search raspberry pi tutorials in order to continue SRS
+
+7/10/2015 (12-4)
+- Continue working on SRS document
+
+7/09/2015 (6-10)
+- Finish reviewing found material
+- Start SRS document
+
+7/08/2015 (12-3)
+- Review found material 
+
+07/07/2015 (6-9)
+- Continue researching Raspberry Pi and servos
+- Found several tutorials on getting started with Raspberry Pi
+- Found several articles discussing specifics of servos and Raspberry Pi
+- Found article on using the Raspberry Pi to control servos
+
+07/06/2015 (3-5)
+- Orientation
+- Discuss requirements
+- Given task: Use Raspberry Pi to control two servos
+- Preliminary review of two design documents (Sal and George)
+- Start research on Raspberry Pi and servos 
+
+
