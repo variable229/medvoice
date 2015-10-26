@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+      position: relative;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#HOME">Gevork Asatryan</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#WHO">WHO</a></li>
+        <li><a href="#WHAT">WHAT</a></li>
+        <li><a href="#WHERE">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div id="WHO" class="container-fluid bg-1 text-center">
+  <h2 class="margin">Who Am I?</h2>
+  <img src="me2.jpg" class="img-responsive img-rounded margin" style="display:inline" alt="Me" width="350" height="350">
+  <h3>My name is Gevork Asatryan and I am a thrill seeker and adventurer.</h3>
+</div>
+
+<!-- Second Container -->
+<div id="WHAT" class="container-fluid bg-2 text-center">
+  <h2 class="margin">What Am I?</h2>
+  <p>I'm a student at Cal Poly Pomona majoring in electrical engineering. I'm set to graduate in Winter quarter of 2016. </p>
+  <a href="https://www.google.com/webhp?hl=en#hl=en&q=gevork+asatryan" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id="WHERE" class="container-fluid bg-3 text-center">    
+  <h2 class="margin">Where To Find Me?</h2><br>
+  <div class="row">
+    <div class="col-md-4">
+      <h3>School</h3>
+      <p>Cal Poly Pomona</p>
+      <a href="http://www.cpp.edu/" target="_blank">
+      <img src="cpp.jpg" class="img-responsive margin" style="width:100%" alt="Cal Poly Pomona">
+      </a>
+    </div>
+    <div class="col-md-4"> 
+      <h3>Work</h3>
+      <p>MedVoice Bio Tech</p>
+      <a href="https://www.facebook.com/medvoicebio" target="_blank">
+      <img src="medvoice.jpg" class="img-responsive margin" style="width:100%" alt="MedVoice">
+      </a>
+    </div>
+    <div class="col-md-4">
+      <h3>Residence</h3> 
+      <p>Living in the greater Los Angeles region</p>
+      <a href="https://www.facebook.com/places/Things-to-do-in-Los-Angeles-California/110970792260960/" target="_blank">
+      <img src="losangeles.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
