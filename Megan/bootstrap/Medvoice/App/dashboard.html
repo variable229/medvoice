@@ -16,11 +16,16 @@
 }
 /* Add an orange color to all icons and set the font-size */
 .logo-small {
-    color: #01DFA5;
+    color: #ffffff;
     font-size: 40px;
     padding: 10px 15px
 }
 
+.logo-small2 {
+    color: #01DFA5;
+    font-size: 40px;
+    padding: 10px 15px
+}
 .logo {
     color: #01DFA5;
     font-size: 200px;
@@ -50,7 +55,30 @@
 .item span {
     font-style: normal;
 }
+.navbar {
+    margin-bottom: 0;
+    background-color: #01DFA5;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
 
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
 </style>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -61,16 +89,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                
       </button>
-      <a class="glyphicon glyphicon-menu-hamburger logo-small"></a>
+  <a class="glyphicon glyphicon-menu-hamburger logo-small"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-  
-        <li><span class="glyphicon glyphicon-envelope logo-small"></span></li>
+        <a class="glyphicon glyphicon-envelope logo-small"></a>
       </ul>
     </div>
   </div>
 </nav>
+    
 <div class="jumbotron text-center">
   <h1>MedVoice</h1> 
   <p>Raising Health Awareness</p> 
@@ -81,19 +109,20 @@
 </div>
 <div class="container-fluid text-center">
   <div class="row">
-    <div class="row-sm-5 text-center">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
+    <div class="col-sm-6 text-center">
+      <span class="glyphicon glyphicon-heart logo-small2"></span>
       <h4>SELF-CHECK</h4>
-      <p>Raise Your Health Awareness By Performing A Self-Check Using Voice and Video Recognition</p>
+      <p>Raise Your Health Awareness By Performing <br>A Self-Check Using Voice and Video Recognition</p>
     </div>
     <br>
-    <div class="row-sm-5 text-center">
-      <span class="glyphicon glyphicon-signal logo-small"></span>
+    <div class="col-sm-6 text-center">
+      <span class="glyphicon glyphicon-signal logo-small2"></span>
       <h4>HEALTH</h4>
       <p>View Health Progress History</p>
     </div>
   </div><br>
-  <h4>Recent News Posted By Care Providers And Recipients</h4>
+    
+     <h4>Recent News Posted By Care Providers And Recipients</h4>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -105,7 +134,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+          <cr><h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4></cr>
       </div>
       <div class="item">
         <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
@@ -125,7 +154,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
 </div>
 </body>
 </html>
