@@ -1,4 +1,7 @@
 /* Navigation bar */
+.nav {
+    background-color:#fff;
+}
 .nav a {
     color:#5a5a5a;
     font-size: 11px;
@@ -9,6 +12,7 @@
     padding-right: 10px;
     text-transform: uppercase;
     font-family: "Bradley Hand", serif;
+
 }
 
 .nav li {
@@ -21,10 +25,12 @@
     padding-right: 10px;
     text-transform: uppercase;
     font-family: "Bradley Hand", serif;
-    display:inline;
+
+
 }
 
 /* Jumbotron (Health History)*/
+
 .jumbotron {
     height: 500px;
     background-image: url("dashboard.jpeg")
@@ -36,18 +42,19 @@
 }
 
 .jumbotron a {
-    color: white;
+    color: #fff;
+    font-weight:bold;
 }
 
 .jumbotron h1{
-    color: white;
+    color: #fff;
     font-size: 46px;
     font-weight:bold;
     font-family: "Bradley Hand", serif;
 }
 
 .jumbotron p {
-    color: white;
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
     font-family: "Bradley Hand", serif;
@@ -55,5 +62,5 @@
 
 /* Newsfeed (care providers and recipients)*/
 .newsfeed {
-    background-color:azure;
+    background-color:#fff;
 }
