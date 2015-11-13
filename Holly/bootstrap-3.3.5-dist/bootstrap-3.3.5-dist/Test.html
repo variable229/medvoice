@@ -7,68 +7,127 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> 
 </head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
+<body style="height:1500px">
 
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-8">
-                            <h2>Mike Anamendolla</h2>
-                            <p><strong>About: </strong> Web Designer / UI. </p>
-                            <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
-                            <p>
-                                <strong>Skills: </strong>
-                                <span class="label label-info tags">html5</span>
-                                <span class="label label-info tags">css3</span>
-                                <span class="label label-info tags">jquery</span>
-                                <span class="label label-info tags">bootstrap3</span>
-                            </p>
-                        </div><!--/col-->
-                        <div class="col-xs-12 col-sm-4 text-center">
-                            <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="" class="center-block img-circle img-responsive">
-                            <div class="star-rating">
-                                <span class="fa fa-star-o" data-rating="1"></span>
-                                <span class="fa fa-star-o" data-rating="2"></span>
-                                <span class="fa fa-star-o" data-rating="3"></span>
-                                <span class="fa fa-star-o" data-rating="4"></span>
-                                <span class="fa fa-star-o" data-rating="5"></span>
-                                <input type="hidden" name="whatever" class="rating-value" value="3">
-                            </div>
-                        </div><!--/col-->
-                        <span class="rating">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </span>
-                        <div class="col-xs-12 col-sm-4">
-                            <h2><strong> 20,7K </strong></h2>
-                            <p><small>Followers</small></p>
-                            <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
-                        </div><!--/col-->
-                        <div class="col-xs-12 col-sm-4">
-                            <h2><strong>245</strong></h2>
-                            <p><small>Following</small></p>
-                            <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
-                        </div><!--/col-->
-                        <div class="col-xs-12 col-sm-4">
-                            <h2><strong>43</strong></h2>
-                            <p><small>Snippets</small></p>
-                            <button type="button" class="btn btn-primary btn-block"><span class="fa fa-gear"></span> Options </button>
-                        </div><!--/col-->
-                    </div><!--/row-->
-                </div><!--/panel-body-->
-            </div><!--/panel-->
-
-
-
+    <!--Start Header-->
+    <div id="screensaver">
+        <canvas id="canvas"></canvas>
+        <i class="fa fa-lock" id="screen_unlock"></i>
+    </div>
+    <div id="modalbox">
+        <div class="devoops-modal">
+            <div class="devoops-modal-header">
+                <div class="modal-header-name">
+                    <span>Basic table</span>
+                </div>
+                <div class="box-icons">
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="devoops-modal-inner">
+            </div>
+            <div class="devoops-modal-bottom">
+            </div>
         </div>
     </div>
-</div>
-    </body>
+    <header class="navbar">
+        <div class="container-fluid expanded-panel">
+            <div class="row">
+                <div id="logo" class="col-xs-12 col-sm-2">
+                    <a href="index.html">DevOOPS v2</a>
+                </div>
+                <div id="top-panel" class="col-xs-12 col-sm-10">
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-4">
+                            <div id="search">
+                                <input type="text" placeholder="search" />
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-8 top-panel-right">
+                            <a href="#" class="about">about</a>
+                            <a href="index_v1.html" class="style1"></a>
+                            <ul class="nav navbar-nav pull-right panel-menu">
+                                <li class="hidden-xs">
+                                    <a href="index.html" class="modal-link">
+                                        <i class="fa fa-bell"></i>
+                                        <span class="badge">7</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a class="ajax-link" href="ajax/calendar.html">
+                                        <i class="fa fa-calendar"></i>
+                                        <span class="badge">7</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="ajax/page_messages.html" class="ajax-link">
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="badge">7</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle account" data-toggle="dropdown">
+                                        <div class="avatar">
+                                            <img src="img/avatar.jpg" class="img-circle" alt="avatar" />
+                                        </div>
+                                        <i class="fa fa-angle-down pull-right"></i>
+                                        <div class="user-mini pull-right">
+                                            <span class="welcome">Welcome,</span>
+                                            <span>Jane Devoops</span>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-user"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="ajax/page_messages.html" class="ajax-link">
+                                                <i class="fa fa-envelope"></i>
+                                                <span>Messages</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="ajax/gallery_simple.html" class="ajax-link">
+                                                <i class="fa fa-picture-o"></i>
+                                                <span>Albums</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="ajax/calendar.html" class="ajax-link">
+                                                <i class="fa fa-tasks"></i>
+                                                <span>Tasks</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-cog"></i>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-power-off"></i>
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+</body>
 </html>
