@@ -1,4 +1,15 @@
+.title{
+    font-family: "PilGi", PilGi;
+}
 .card {
   position:relative;
   top:10px;
+}
+
+.media-body {
+    font-family: "PilGi", PilGi;
+}
+
+.tab-item {
+    font-family: "PilGi", PilGi;
 }
