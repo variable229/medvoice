@@ -12,3 +12,11 @@
   position: relative;
   top: 20px;
 }
+
+.media-body p {
+    font-family: "PilGi", PilGi;
+}
+
+.tab-item {
+    font-family: "PilGi", PilGi;
+}
