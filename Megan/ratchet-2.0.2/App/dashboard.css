@@ -1,0 +1,41 @@
+.title{
+  font-family: "PilGi", PilGi;
+}
+
+.Share input {
+  font-family: "Brush Script MT",Brush Script MT;
+}
+.Share button {
+  font-family: "Brush Script MT", Brush Script MT;
+  poition: relative;
+  bottom: 48px;
+  right: 10px;
+}
+
+.container .jumbotron {
+  height: 300px;
+  position: relative;
+  top:50px;
+  background-image: url('health_history.png');
+}
+
+.jumbotron h1 {
+  color: #2E64FE;
+  font-family: "Brush Script MT", Brush Script MT;
+  position: relative;
+  top: 45px;
+  left: 10px;
+}
+
+.jumbotron p {
+    color: #2E64FE;
+    font-family: "Brush Script MT", Brush Script MT;
+    position: relative;
+    top: 33px;
+    left: 10px;
+}
+
+.table-view {
+  position: relative;
+  top: 60px;
+}
