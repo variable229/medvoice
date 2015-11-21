@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Profile</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <!-- Optionally, include either the iOS or Android theme -->
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+
+    <!-- Include my css style sheet from previous dashboard design-->
+    <link href="profile.css" rel="stylesheet">
+  </head>
+  <!-- Navigation bar -->
+  <header class="bar bar-nav">
+    <a class="icon icon-left-nav pull-left"></a>
+    <h1 class="title">Care Recipient's Profile</h1>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    <!--Profile Picture-->
+    <img class="profile" src="profile.jpg">
+    <!--Posts-->
+    
+    <ul class="table-view">
+<li class="table-view-cell media">
+  <a class="navigate-right">
+    <img class="media-object pull-left" src="http://placehold.it/42x42">
+    <div class="media-body">
+      Posted Yesterday
+      <p>blah blah blah blah.</p>
+    </div>
+  </a>
+</li>
+<li class="table-view-cell media">
+  <a class="navigate-right">
+    <img class="media-object pull-left" src="http://placehold.it/42x42">
+    <div class="media-body">
+      Posted Today
+      <p>blah blah blah blah.</p>
+    </div>
+  </a>
+</li>
+</ul>
+</div>
+      <!-- Footer -->
+      <div class= "bar bar-tab">
+        <a class= "tab-item">
+          <span class= "icon icon-person"></span>
+          <span class= "tab-label">About</span>
+          </a>
+
+          <a class= "tab-item">
+            <span class="icon icon-compose"></span>
+            <span class= "tab-label">Chat</span>
+            </a>
+
+            <a class= "tab-item">
+              <span class="icon icon-star"></span>
+              <span class= "tab-label">Rate</span>
+              </a>
+        </div>
+  </div>

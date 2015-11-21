@@ -1,0 +1,22 @@
+.title{
+    font-family: "PilGi", PilGi;
+}
+
+.profile {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.table-view {
+  position: relative;
+  top: 20px;
+}
+
+.media-body p {
+    font-family: "PilGi", PilGi;
+}
+
+.tab-item {
+    font-family: "PilGi", PilGi;
+}
