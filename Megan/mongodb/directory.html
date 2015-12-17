@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div id="id01"></div>
+
+<h1>MedVoice Interns</h1>
+<div id="id01"></div>
 
 <script>
 var xmlhttp = new XMLHttpRequest();
-var url = "intern.txt";
+//var url = "http://www.w3schools.com/website/customers_mysql.php";
+//var url = "http://127.0.0.1:28017/test/customers/";
+var url = "http://127.0.0.1/medvoice/Megan/mongodb/intern.php"
 
-xmlhttp.onreadystatechange = function() {
+xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        var interns = JSON.parse(xmlhttp.responseText);
-        myFunction(interns);
+        myFunction(xmlhttp.responseText);
     }
-};
+}
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
-function myFunction(arr) {
-    var out = "";
+function myFunction(response) {
+    var arr = JSON.parse(response);
     var i;
+    var out = "<table>";
+
     for(i = 0; i < arr.length; i++) {
-        out += '<a href="' + arr[i].url + '">' +
-        arr[i].display + '</a><br>';
+        out += "<tr><td>" +
+        arr[i].Name +
+        "</td><td>" +
+        arr[i].Email +
+        "</td></tr>";
     }
-    document.getElementById("id01").innerHTML = out;
+
+    out += "</table>";
+    document.getElementById("id01").innerHTML = response;
 }
 </script>
 
