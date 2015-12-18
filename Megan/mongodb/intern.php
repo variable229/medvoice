@@ -9,13 +9,13 @@
    echo "[";
    $cursor = $collection->find();
    foreach ($cursor as $document) {
-     //	   var_dump( $document );
-           echo "{\"Name\":\"" . $document["Name"] . "\",";
-     	  echo "\"Email\":\"" . $document["Email"] . "\"},";
+//	   var_dump( $document );
+      echo "{\"Name\":\"" . $document["Name"] . "\",";
+      echo "\"Email\":\"" . $document["Email"] . "\"},";
+   }
 
-        }
+   echo "{\"Name\":\"" . "\",";
+   echo "\"Email\":\"" . "\"}";
+   echo "]";
 
-
-        echo "]";
-
-     ?>
+?>

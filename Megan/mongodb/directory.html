@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>MedVoice Interns</h1>
+<h1>Customers</h1>
 <div id="id01"></div>
 
 <script>
 var xmlhttp = new XMLHttpRequest();
-//var url = "http://www.w3schools.com/website/customers_mysql.php";
-//var url = "http://127.0.0.1:28017/test/customers/";
-var url = "http://127.0.0.1/medvoice/Megan/mongodb/intern.php"
+var url = "http://127.0.0.1/medvoice/Megan/mongodb/intern.php";
 
 xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -31,9 +30,8 @@ function myFunction(response) {
         arr[i].Email +
         "</td></tr>";
     }
-
     out += "</table>";
-    document.getElementById("id01").innerHTML = response;
+    document.getElementById("id01").innerHTML = out;
 }
 </script>
 
