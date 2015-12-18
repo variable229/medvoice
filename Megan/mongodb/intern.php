@@ -11,11 +11,13 @@
    foreach ($cursor as $document) {
 //	   var_dump( $document );
       echo "{\"Name\":\"" . $document["Name"] . "\",";
-      echo "\"Email\":\"" . $document["Email"] . "\"},";
+	  echo "\"Email\":\"" . $document["Email"] . "\",";
+      echo "\"Mobile\":\"" . $document["Mobile"] . "\"},";
    }
 
    echo "{\"Name\":\"" . "\",";
-   echo "\"Email\":\"" . "\"}";
+   echo "\"Email\":\"" . "\",";
+   echo "\"Mobile\":\"" . "\"}";
    echo "]";
 
 ?>
