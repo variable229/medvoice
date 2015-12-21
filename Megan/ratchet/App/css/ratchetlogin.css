@@ -406,12 +406,12 @@ p {
 
 .btn-negative {
   color: #fff;
-  background-color: #d9534f;
+  background-color: #45B39D ;
   border: 1px solid #d9534f;
 }
 .btn-negative:active, .btn-negative.active {
   color: #fff;
-  background-color: #c9302c;
+  background-color: #45B39D;
   border: 1px solid #c9302c;
 }
 

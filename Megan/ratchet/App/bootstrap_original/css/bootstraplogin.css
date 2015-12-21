@@ -2624,6 +2624,7 @@ input[type="search"] {
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
     line-height: 46px;
+
   }
 }
 .form-group {
@@ -5008,11 +5009,12 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #D1F2EB  ;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+  font-family:'Zapfino'
 }
 .jumbotron p {
   margin-bottom: 15px;
