@@ -1,43 +1,63 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Case</title>
+    <title>Profile Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style>
-        body {
-  padding-top: 60px;
+        .navbar-default {
+    background-color: #B22222;
+    border-color: #E7E7E7;
 }
-@media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
-}
+
+        #logo{
+            float:left;
+        }
     </style>
+
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">< Back</a>
-                </div>
-            
-                <h1 class="text-center" style="color:white">John Smith</h1>
-            
-            <a id="nav-toggle" class="navbar-right" style="color:white" font-size="100px" href="#">&#9776;</a>
+    <div class="navbar navbar-default navbar-static-top">
+        <div  class="navbar-header">
+            <a class="navbar-brand" href="Dashboard.html">< Back</a>
+            <div id="logo" class="text-center">
+                <img src="MedVoice.png" style="display:inline" alt="MedVoice Logo" width="100" height="30">
+            </div>
+            <div  class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse" id="header-body">
+                <ul class="nav navbar-nav">
+                    <li><a href="EditUserProfile.html">Edit Profile</a></li>
+                    <li><a href="ResultPage.html">Result Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">User Review</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <div class="container-fluid bg-1 text-center">
-        <img src="avatar.jpg" class="img-responsive img-circle" style="display:inline" alt="Avatar" width="200" height="200">
+
     </div>
 
-        <div class="form-group">
-            <label for="Description">Description:</label>
-            <textarea class="form-control" rows="4" id="description"></textarea>
-        </div>
+
+    <div class="text-center">
+        <img src="avatar.jpg" class="img-responsive img-circle" style="display:inline" alt="Avatar" width="100" height="100">
+        <h1>John Smith</h1>
+    </div>
+    <div class="form-group">
+        <label for="Description">Description:</label>
+        <textarea class="form-control" rows="4" id="description"></textarea>
+    </div>
 </body>
 </html>

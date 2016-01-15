@@ -9,54 +9,72 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <style>
-.navbar-default {
-    background-color: #B22222;
-    border-color: #E7E7E7;
-}
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 80%;
-      margin: auto;
-  }
-body {
-  padding-top: 60px;
-}
-@media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
-}
-    </style> 
+        .navbar-default {
+            background-color: #B22222;
+            border-color: #E7E7E7;
+        }
+
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        @media (max-width: 979px) {
+            body {
+                padding-top: 0px;
+            }
+        }
+    </style>
 </head>
 <body style="height:1500px">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
             <ul class="nav navbar-nav pull-right panel-menu">
-                <li class="hidden-xs">
-                    <a href="index.html" class="modal-link">
+                <li>
+                    <a href="" class="modal-link">
                         <i class="fa fa-bell" style="color:white"></i>
                         <span class="badge">7</span>
                     </a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav pull-left panel-menu">
-                <li class="hidden-xs">
-                    <a href="index.html" class="modal-link">
-                        <i class="glyphicon glyphicon-menu-hamburger" style="color:white"></i>
-                    </a>
-                </li>
-            </ul>
+            <div id="logo" class="text-center">
+                <img src="MedVoice.png" style="display:inline" alt="MedVoice Logo" width="100" height="30">
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#header-body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
+            </div>
+            <div class="navbar-collapse collapse" id="header-body">
+                <ul class="nav navbar-nav">
+                    <li><a href="EditUserProfile.html">Edit Profile</a></li>
+                    <li><a href="ResultPage.html">Result Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">User Review</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
         </div>
-       
-</nav>
-    
+
+    </div>
+
     <div class="input-group">
-        <span class="input-group-addon" id="sizing-addon2"><img src="avatar.jpg" alt="avatar" width="20" height="20"></span>
+        <span class="input-group-addon" id="sizing-addon2"><img src="avatar.jpg" alt="avatar" width="15" height="15"></span>
         <input type="text" class="form-control" placeholder="How are you feeling today?" aria-describedby="sizing-addon2">
     </div>
-    
+
     <!---Carousel--->
     <div class="container">
         <br>
@@ -73,10 +91,10 @@ body {
             <div class="carousel-inner" role="listbox">
 
                 <div class="item active">
-                    <img src="thanksgiving.jpg" alt="Thanksgiving" width="300" height="245">
+                    <img src="MedVoiceStart.jpg" alt="MedVoice Image" width="300" height="245">
                     <div class="carousel-caption">
                         <h3>MedVoice</h3>
-                      
+
                     </div>
                 </div>
 
@@ -92,23 +110,23 @@ body {
 
                 <div class="item">
                     <a href="http://www.webmd.com/fitness-exercise/video/5-minute-lunge-and-squat-workout-video">
-                    <img src="exercise.jpg" alt="Exercise" width="300" height="245">
-                    <div class="carousel-caption">
-                        <h3>Exercise</h3>
-                        <p>Live healthier and lead an active lifestyle</p>
-                        <p>Try this 5 minutes of squats and lunges</p>
-                    </div>
-                        </a>
+                        <img src="exercise.jpg" alt="Exercise" width="300" height="245">
+                        <div class="carousel-caption">
+                            <h3>Exercise</h3>
+                            <p>Live healthier and lead an active lifestyle</p>
+                            <p>Try this 5 minutes of squats and lunges</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="item">
                     <a href="http://www.health.com/health/gallery/0,,20488689,00.html">
-                    <img src="pressure.jpg" alt="Blood Pressure" width="300" height="245">
-                    <div class="carousel-caption">
-                        <h3>Blood Pressure</h3>
-                        <p>Learn how to keep your blood pressure at a healthy level</p>
-                    </div>
-                        </a>
+                        <img src="pressure.jpg" alt="Blood Pressure" width="300" height="245">
+                        <div class="carousel-caption">
+                            <h3>Blood Pressure</h3>
+                            <p>Learn how to keep your blood pressure at a healthy level</p>
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -124,61 +142,132 @@ body {
             </a>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-
-                <div class="card hovercard">
-                    <div class="cardheader">
-
-                    </div>
-                    <div class="avatar">
-                        <img alt="" src="avatar.jpg" width="150" height="160">
-                    </div>
-                    <div class="info">
-                        <div class="title">
-                            <a target="_blank" href="#">Dr. John Smith</a>
-                        </div>
-                        <div class="desc">Education</div>
-                        <div class="desc">Specialty</div>
-                        <div class="desc">Experience</div>
-                    </div>
-                    <div class="bottom">
-                        <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-danger btn-sm" rel="publisher"
-                           href="https://plus.google.com/+ahmshahnuralam">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                        <a class="btn btn-primary btn-sm" rel="publisher"
-                           href="https://plus.google.com/shahnuralam">
-                            <i class="fa fa-facebook"></i>
-                        </a>   
-                    </div>
-                    <div class="input-group margin-bottom-sm">
-                        <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
-                        <input class="form-control" type="text" placeholder="Comment">
-                    </div>
-                </div>
+    <div class="w3-third w3-container">
+        <div class="card hovercard">
+            <div class="cardheader">
 
             </div>
-
+            <div class="avatar">
+                <img alt="" src="avatar.jpg" width="125" height="140">
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a target="_blank" href="#">Dr. John Smith</a>
+                </div>
+                <div class="desc">Education</div>
+                <div class="desc">Specialty</div>
+                <div class="desc">Experience</div>
+            </div>
+            <div class="bottom">
+                <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-danger btn-sm" rel="publisher"
+                   href="https://plus.google.com/+ahmshahnuralam">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-primary btn-sm" rel="publisher"
+                   href="https://plus.google.com/shahnuralam">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+            <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                <input class="form-control" type="text" placeholder="Comment">
+            </div>
         </div>
     </div>
-    <div class="navbar navbar-default navbar-fixed-bottom"  role="navigation">
-        <div class="col-xs-8 col-sm-4">
-            <div id="search">
-                <input type="text" placeholder="CHECK DISEASE"/>
-                <i class="fa fa-search"></i>
+
+    <div class="w3-third w3-container">
+        <div class="card hovercard">
+            <div class="cardheader">
+
+            </div>
+            <div class="avatar">
+                <img alt="" src="avatar.jpg" width="125" height="140">
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a target="_blank" href="#">Dr. Jane Doe</a>
+                </div>
+                <div class="desc">Education</div>
+                <div class="desc">Specialty</div>
+                <div class="desc">Experience</div>
+            </div>
+            <div class="bottom">
+                <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-danger btn-sm" rel="publisher"
+                   href="https://plus.google.com/+ahmshahnuralam">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-primary btn-sm" rel="publisher"
+                   href="https://plus.google.com/shahnuralam">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+            <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                <input class="form-control" type="text" placeholder="Comment">
             </div>
         </div>
-        <div class="btn-group pull-right" >
+
+    </div>
+
+    <div class="w3-third w3-container">
+        <div class="card hovercard">
+            <div class="cardheader">
+
+            </div>
+            <div class="avatar">
+                <img alt="" src="avatar.jpg" width="125" height="140">
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a target="_blank" href="#">Dr. Robert Nguyen</a>
+                </div>
+                <div class="desc">Education</div>
+                <div class="desc">Specialty</div>
+                <div class="desc">Experience</div>
+            </div>
+            <div class="bottom">
+                <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-danger btn-sm" rel="publisher"
+                   href="https://plus.google.com/+ahmshahnuralam">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-primary btn-sm" rel="publisher"
+                   href="https://plus.google.com/shahnuralam">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+            <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                <input class="form-control" type="text" placeholder="Comment">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="col-xs-8 col-sm-4">
+            <div id="search">
+                <input type="text" placeholder="CHECK DISEASE" />
+                <a class="btn btn-default" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="btn-group pull-right">
             <button type="button" class="btn btn-default">
                 <span class="glyphicon glyphicon-facetime-video"></span>
             </button>
             <a class="btn btn-default" href="#">
-                    <i class="fa fa-microphone"></i>
+                <i class="fa fa-microphone"></i>
             </a>
         </div>
     </div>

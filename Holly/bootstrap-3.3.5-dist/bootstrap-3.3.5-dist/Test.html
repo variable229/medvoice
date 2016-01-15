@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Bootstrap Case</title>
@@ -8,126 +8,268 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style>
+        .navbar-default {
+            background-color: #B22222;
+            border-color: #E7E7E7;
+        }
+
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        @media (max-width: 979px) {
+            body {
+                padding-top: 0px;
+            }
+        }
+    </style>
 </head>
 <body style="height:1500px">
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav pull-right panel-menu">
+                <li>
+                    <a href="" class="modal-link">
+                        <i class="fa fa-bell" style="color:white"></i>
+                        <span class="badge">7</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="logo" class="text-center">
+                <img src="MedVoice.png" style="display:inline" alt="MedVoice Logo" width="100" height="30">
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#header-body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-    <!--Start Header-->
-    <div id="screensaver">
-        <canvas id="canvas"></canvas>
-        <i class="fa fa-lock" id="screen_unlock"></i>
-    </div>
-    <div id="modalbox">
-        <div class="devoops-modal">
-            <div class="devoops-modal-header">
-                <div class="modal-header-name">
-                    <span>Basic table</span>
+            </div>
+            <div class="navbar-collapse collapse" id="header-body">
+                <ul class="nav navbar-nav">
+                    <li><a href="EditUserProfile.html">Edit Profile</a></li>
+                    <li><a href="ResultPage.html">Result Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">User Review</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2"><img src="avatar.jpg" alt="avatar" width="15" height="15"></span>
+            <input type="text" class="form-control" placeholder="How are you feeling today?" aria-describedby="sizing-addon2">
+        </div>
+
+        <!---Carousel--->
+        <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="MedVoiceStart.jpg" alt="MedVoice Image" width="300" height="245">
+                        <div class="carousel-caption">
+                            <h3>MedVoice</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256">
+                            <img src="water.jpg" alt="Water" width="300" height="245">
+                            <div class="carousel-caption">
+                                <h3>Hydration</h3>
+                                <p>Are you drinking enough water everyday?</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.webmd.com/fitness-exercise/video/5-minute-lunge-and-squat-workout-video">
+                            <img src="exercise.jpg" alt="Exercise" width="300" height="245">
+                            <div class="carousel-caption">
+                                <h3>Exercise</h3>
+                                <p>Live healthier and lead an active lifestyle</p>
+                                <p>Try this 5 minutes of squats and lunges</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.health.com/health/gallery/0,,20488689,00.html">
+                            <img src="pressure.jpg" alt="Blood Pressure" width="300" height="245">
+                            <div class="carousel-caption">
+                                <h3>Blood Pressure</h3>
+                                <p>Learn how to keep your blood pressure at a healthy level</p>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="box-icons">
-                    <a class="close-link">
-                        <i class="fa fa-times"></i>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="w3-third w3-container">
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="avatar.jpg" width="125" height="140">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="#">Dr. John Smith</a>
+                    </div>
+                    <div class="desc">Education</div>
+                    <div class="desc">Specialty</div>
+                    <div class="desc">Experience</div>
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Comment">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-container">
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="avatar.jpg" width="125" height="140">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="#">Dr. Jane Doe</a>
+                    </div>
+                    <div class="desc">Education</div>
+                    <div class="desc">Specialty</div>
+                    <div class="desc">Experience</div>
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Comment">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-third w3-container">
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="avatar.jpg" width="125" height="140">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="#">Dr. Robert Nguyen</a>
+                    </div>
+                    <div class="desc">Education</div>
+                    <div class="desc">Specialty</div>
+                    <div class="desc">Experience</div>
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Comment">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="col-xs-8 col-sm-4">
+                <div id="search">
+                    <input type="text" placeholder="CHECK DISEASE" />
+                    <a class="btn btn-default" href="#">
+                        <i class="fa fa-search"></i>
                     </a>
                 </div>
             </div>
-            <div class="devoops-modal-inner">
-            </div>
-            <div class="devoops-modal-bottom">
-            </div>
-        </div>
-    </div>
-    <header class="navbar">
-        <div class="container-fluid expanded-panel">
-            <div class="row">
-                <div id="logo" class="col-xs-12 col-sm-2">
-                    <a href="index.html">DevOOPS v2</a>
-                </div>
-                <div id="top-panel" class="col-xs-12 col-sm-10">
-                    <div class="row">
-                        <div class="col-xs-8 col-sm-4">
-                            <div id="search">
-                                <input type="text" placeholder="search" />
-                                <i class="fa fa-search"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-8 top-panel-right">
-                            <a href="#" class="about">about</a>
-                            <a href="index_v1.html" class="style1"></a>
-                            <ul class="nav navbar-nav pull-right panel-menu">
-                                <li class="hidden-xs">
-                                    <a href="index.html" class="modal-link">
-                                        <i class="fa fa-bell"></i>
-                                        <span class="badge">7</span>
-                                    </a>
-                                </li>
-                                <li class="hidden-xs">
-                                    <a class="ajax-link" href="ajax/calendar.html">
-                                        <i class="fa fa-calendar"></i>
-                                        <span class="badge">7</span>
-                                    </a>
-                                </li>
-                                <li class="hidden-xs">
-                                    <a href="ajax/page_messages.html" class="ajax-link">
-                                        <i class="fa fa-envelope"></i>
-                                        <span class="badge">7</span>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle account" data-toggle="dropdown">
-                                        <div class="avatar">
-                                            <img src="img/avatar.jpg" class="img-circle" alt="avatar" />
-                                        </div>
-                                        <i class="fa fa-angle-down pull-right"></i>
-                                        <div class="user-mini pull-right">
-                                            <span class="welcome">Welcome,</span>
-                                            <span>Jane Devoops</span>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-user"></i>
-                                                <span>Profile</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="ajax/page_messages.html" class="ajax-link">
-                                                <i class="fa fa-envelope"></i>
-                                                <span>Messages</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="ajax/gallery_simple.html" class="ajax-link">
-                                                <i class="fa fa-picture-o"></i>
-                                                <span>Albums</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="ajax/calendar.html" class="ajax-link">
-                                                <i class="fa fa-tasks"></i>
-                                                <span>Tasks</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-cog"></i>
-                                                <span>Settings</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-power-off"></i>
-                                                <span>Logout</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-facetime-video"></span>
+                </button>
+                <a class="btn btn-default" href="#">
+                    <i class="fa fa-microphone"></i>
+                </a>
             </div>
         </div>
-    </header>
-    <!--End Header-->
 </body>
 </html>
