@@ -21,53 +21,53 @@
   </head>
   <body>
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '936112039776133',
-          xfbml      : true,
-          version    : 'v2.5'
-        });
-      };
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '936112039776133',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <div class="content-padded">
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
+   <div class="content-padded">
       <div class="container_logo">
         <img src="MedImage.jpg" alt="MedVoice" width="100%"/>
-        <p>Promoting Health Awareness</p>
+        <p>Health Awareness with Social Support</p>
       </div>
-
-    <div class ="card_container">
+      <div class = "content-padded">
+        <div class="login">
+          <form class="input-group">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Password">
+          </form>
+          <button class="btn btn-negative btn-block">Login</button>
+          </div>
+        </div>
+        <div class ="card_container">
           <div class="card">
             <ul class="table-view">
-              <li class="table-view-cell">
-                <a class="push-right" href="login2.html">
-                  <strong>Existing User</strong>
-                </a>
-              </li>
               <li class="table-view-cell">
                 <a class="push-right" href="fblogin.html">
                   <strong>Login with FaceBook</strong>
                 </a>
               </li>
               <li class="table-view-cell">
-                <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
+                <a class="push-right" href="EditUserProfile.html">
                   <strong>Sign Up</strong>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-          <div class="container">
-            <div class="fb-like"data-share="true" data-width="450" data-show-faces="true">
-          </div>
-        </div>
-
-
-  </body>
+        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+      </div>
+    </body>
+    </html>
