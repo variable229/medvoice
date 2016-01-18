@@ -3716,7 +3716,6 @@ tbody.collapse.in {
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding-top:50px;
 }
 .btn-group > .btn-group {
   float: left;
@@ -4198,7 +4197,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
-    padding-top:100px;
   }
 }
 .navbar-collapse {
@@ -4295,7 +4293,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 100px;
+  height: 50px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4981,7 +4979,7 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   color: inherit;
-
+  
 
 
 
