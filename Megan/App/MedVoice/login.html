@@ -3,30 +3,19 @@
 <head>
   <title>MedVoice</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <link href=ratchet/css/ratchet.css>
-  <link href=bootstrap/css/bootstrap.css>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <style>
-
-  .navbar .brand {
-max-height: 0px;
-overflow: visible;
-padding-top: 0;
-padding-bottom: 0;
+  #logo {
+  height:110%;
 }
-.navbar a.navbar-brand {
-  Position:absolute;
-  top: 10;
-  padding: 9px 10px 8px; }
 
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
-      padding: 25px;
+
     }
 
     .carousel-inner img {
@@ -44,35 +33,30 @@ padding-bottom: 0;
 </head>
 <body>
 
-  <nav style="background-color:silver"class="navbar navbar">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <div class= "mobile">
-
-        <button style="background-color:white" type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#myNavbar">
-          <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-        </button><a class="navbar-brand" href="#"><img src="http://placehold.it/140x34/000000/ffffff/&amp;text=LOGO" alt=""></a>
-    </div></div>
-        <div class="content-padded">
-        <a style="color: grey" class="navbar-brand" href="#"></a></div>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <form class="navbar-form navbar-right" role="Login">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://dev.medvoicebiotech.com/">About MedVoice</a></li>
-          <li><a href="http://dev.medvoicebiotech.com/">User Guide</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img id="logo" src="MedVoice.png"></a>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+          <form class="navbar-form navbar" role="Login">
+               <div style="padding-top:5px;" class="form-group input-group pull-right">
+                 <input type="text" class="form-control" placeholder="Email">
+                 <span class="input-group"></span>
+               </div>
+               <div style="padding-top:5px" class="form-group input-group pull-right">
+                 <input type="text" class="form-control" placeholder="Password">
+                 <span class="input-group"></span>
+               </div>
+             </form>
+           </div>
+         </div>
+       </nav>
 
 <div class="container">
 <div class="row">
@@ -128,69 +112,6 @@ padding-bottom: 0;
 </div>
 <hr>
 </div>
-
-<div class="container text-center">
-  <h3>What We Do</h3>
-  <br>
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
-    </div>
-    <div class="col-sm-3">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>
-    </div>
-    <div class="col-sm-3">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-    </div>
-  </div>
-  <hr>
-</div>
-
-<div class="container text-center">
-  <h3>Our Partners</h3>
-  <br>
-  <div class="row">
-    <div class="col-sm-2">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Partner 1</p>
-    </div>
-    <div class="col-sm-2">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Partner 2</p>
-    </div>
-    <div class="col-sm-2">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Partner 3</p>
-    </div>
-    <div class="col-sm-2">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Partner 4</p>
-    </div>
-    <div class="col-sm-2">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Partner 5</p>
-    </div>
-    <div class="col-sm-2">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Partner 6</p>
-    </div>
-  </div>
-</div><br>
 
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
