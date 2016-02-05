@@ -10,7 +10,11 @@
   <link href=bootstrap/css/bootstrap.css>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   <style>
+  #logo {
+  height:120%;
+}
     /* Remove the navbar's default margin-bottom and rounded borders */
 .mobile button {
 padding-top: 10px;
@@ -19,7 +23,7 @@ padding-top: 10px;
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      background-color: #9F000F;
+
 
     }
 
@@ -37,7 +41,7 @@ padding-top: 10px;
     /* Set black background color, white text and some padding */
     footer {
       position:relative;
-      background-color: #9F000F /* 555 */;
+
       color: white;
       padding-top: 15px;
 
@@ -60,29 +64,27 @@ padding-top: 10px;
 
 </head>
 <body>
-
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <div class= "mobile">
-
-        <button style="background-color:white" type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#myNavbar">
-          <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-        </button></div>
-        <div class="content-padded">
-        <a style="color: grey" class="navbar-brand" href="#">User Guide</a></div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://dev.medvoicebiotech.com/"><img id="logo" src="MedVoice.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a style="color:white" href="guide1.html">Sign Up and Dashboard</a></li>
-          <li><a style="color:white" href="guide2.html">Peer to Peer Chat</a></li>
-          <li><a style="color:white" href="guide3.html">Charts</a></li>
-          <li><a style="color:white" href="guide4.html">Live Scan</a></li>
-          <li><a style="color:white" href="guide5.html">Social Support</a></li>
+          <li><a href="guide1.html">Sign Up and Login</a></li>
+          <li><a href="guide2.html">P2P</a></li>
+          <li><a href="guide3.html">Charts</a></li>
+          <li><a href="guide4.html">Scan</a></li>
+          <li><a href="guide5.html">News</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a style="color:white" href="http://dev.medvoicebiotech.com/"><span class="glyphicon glyphicon-log-in">
-          </span> About MedVoice</a></li>
+          <li><a href="http://megans-macbook-pro.local/medvoice/Megan/App/MedVoice/login.html"><span class="glyphicon glyphicon-log-in">
+          </span> MedVoice</a></li>
         </ul>
       </div>
     </div>
@@ -99,37 +101,23 @@ padding-top: 10px;
 
     <div class="col-sm-8 text-left">
 
-      <div class="jumbotron">
-
-        <img src="MedVoice.png" style="width:100%" alt="MedVoice">
-
         <h2 style="color:#488AC7"> Health Awareness With Social Support </h2>
         <p2>MedVoice strives to raise health awareness with social support using its ability to
           display possible health predispositions using voice recognition, your device's camera
           and care client inputs.
-
-
           <br></br>Care clients also have the ability to: </p2>
-
           <br></br>
-
             <ul>
               <li>Participate in peer to peer chats,</li>
               <li>View their health history,</li>
               <li>Form a social network with care givers and other care clients,</li>
               <li>View medical articles, journals and other medical media.</li>
             </ul>
-
           <hr>
-
-
             <h3 style="color:#488AC7"> January 16, 2016</h3>
             <p2>Any recent news regarding MedVoice can be posted here.
-
               <br></br>Care clients also have the ability to: </p2>
-
               <br></br>
-
                 <ul>
                   <li>Participate in peer to peer chats,</li>
                   <li>View their health history,</li>
@@ -137,7 +125,6 @@ padding-top: 10px;
                   <li>View medical articles, journals and other medical media.</li>
                 </ul>
               <hr>
-        </div>
         <hr>
       </div>
 
@@ -151,9 +138,9 @@ padding-top: 10px;
 
 <footer class="container-fluid text-center">
 <ul>
-  <p style="color:white">Prepared By: Megan Del Rosario </p>
-  <P style="color:white">Version 0.0.1</p>
-  <p style="color:white">January 2016</p>
+  <p>Prepared By: Megan Del Rosario </p>
+  <P>Version 0.0.1</p>
+  <p>January 2016</p>
 
 </ul>
 </footer>

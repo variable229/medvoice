@@ -10,37 +10,20 @@
   <link href=bootstrap/css/bootstrap.css>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   <style>
   #logo {
-  height:110%;
+  height:120%;
 }
-  .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-  }
-
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
-
+    /* Remove the navbar's default margin-bottom and rounded borders */
 .mobile button {
 padding-top: 10px;
   padding-left:10px;
 }
-/* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      background-color: #9F000F;
+
 
     }
 
@@ -49,15 +32,16 @@ padding-top: 10px;
 
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
+      padding-top:20px;
+      margin-bottom:-10px;
       background-color: #eee;
-      height: 947px;
+      height: 801px;
     }
 
     /* Set black background color, white text and some padding */
     footer {
       position:relative;
-      background-color: #9F000F /* 555 */;
+
       color: white;
       padding-top: 15px;
 
@@ -89,18 +73,19 @@ padding-top: 10px;
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img id="logo" src="MedVoice.png"></a>
+        <a class="navbar-brand" href="http://dev.medvoicebiotech.com/"><img id="logo" src="MedVoice.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a style="color:white" href="guide1.html">Sign Up and Login</a></li>
-          <li><a style="color:white" href="guide2.html">Peer to Peer Chat</a></li>
-          <li><a style="color:white" href="guide3.html">Charts</a></li>
-          <li><a style="color:white" href="guide4.html">Live Scan</a></li>
-          <li><a style="color:white" href="guide5.html">Social Support</a></li>
+          <li><a href="guide1.html">Sign Up and Login</a></li>
+          <li><a href="guide2.html">P2P</a></li>
+          <li><a href="guide3.html">Charts</a></li>
+          <li><a href="guide4.html">Scan</a></li>
+          <li><a href="guide5.html">News</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a style="color:white" href="MedVoice/login.html"><span class="glyphicon glyphicon-log-in"></span> MedVoice</a></li>
+          <li><a href="http://megans-macbook-pro.local/medvoice/Megan/App/MedVoice/login.html"><span class="glyphicon glyphicon-log-in">
+          </span> MedVoice</a></li>
         </ul>
       </div>
     </div>
@@ -110,27 +95,30 @@ padding-top: 10px;
   <div class="row content">
 
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      <p><a href="#">P2P</a></p>
+      <p><a href="#">Charts</a></p>
+      <p><a href="#">Scan</a></p>
+      <p><a href="#">Social Support</a></p>
     </div>
 
     <div class="col-sm-8 text-left">
 
-    <h3 style="color:#488AC7"> Signing Up </h3>
-    <p2>MedVoice strives to raise health awareness with social support. Using voice recognition, your
-      device's camera and care client inputs, MedVoice has the ability to  display possible health
-      predispositions. Care clients may also participate in peer to peer chats, view
-      their health history, and form a social network with care givers and other care clients, and
-      view scholarly articles, journals and other media.</p2>
+      <div class="container-fluid">
+    <h3 style="color:#488AC7"> Signing Up and Logging In </h3>
+    <p2>MedVoice strives to raise health awareness with social support.
+      To be a part of the MedVoice community, simply launch the mobile application
+      and select the 'Sign Up' button at the bottom right of the application. After signing up,
+      you will automatically be taken to the MedVoice dashboard where you will notice several features
+      such as Journal, P2P, Chart, Scan, and News. Learn more about these features in the navigation
+      bar above. To learn more about the Dashboard, check out the links above.</p2>
       <hr>
-      <div class="container-fluid text-center">
+      <div class="container">
             <video width="250" controls>
           <source src="Signup.mov">
         </video>
       </div>
           <hr>
-
+        </div>
         </div>
 
         <div class="col-sm-2 sidenav">
