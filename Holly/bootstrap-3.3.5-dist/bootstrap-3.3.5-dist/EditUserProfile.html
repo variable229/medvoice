@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        .image{
+    width:120px;
+    height:120px
+}
+    </style>
+   <script>
+       $(function () {
+           $('#profile_image').change(function (e) {
+
+               var img = URL.createObjectURL(e.target.files[0]);
+               $('.image').attr('src', img);
+           });
+       });
+   </script>
 </head>
 <body>
 <div class="container">
@@ -15,13 +31,13 @@
         <!-- left column -->
         <div class="col-md-3">
             <div class="text-center">
-                <img src="avatar.jpg" width="100" height="100" class="avatar img-circle" alt="avatar">
-                <h6>Upload a different photo...</h6>
-
-                <input class="form-control" type="file">
+                <div>
+                    <img src="avatar.jpg" class="image">
+                </div>
+                <input type="file" id="profile_image">
             </div>
         </div>
-
+        
         <!-- edit form column -->
         <div class="col-md-9 personal-info">
            
@@ -251,8 +267,7 @@
                                     <label class="col-md-3 control-label"></label>
                                     <div class="col-md-8">
                                         <input class="btn btn-primary" value="Save Changes" type="button">
-                                        <span></span>
-                                        <input class="btn btn-default" value="Cancel" type="reset">
+                                        <a href="Dashboard.html" class="btn btn-default">Cancel</a>
                                     </div>
                                 </div>
 
