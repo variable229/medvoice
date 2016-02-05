@@ -11,6 +11,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <style>
+  #logo {
+  height:110%;
+}
     /* Remove the navbar's default margin-bottom and rounded borders */
 .mobile button {
 padding-top: 10px;
@@ -60,27 +63,26 @@ padding-top: 10px;
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <div class= "mobile">
-
-        <button style="background-color:white" type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#myNavbar">
-          <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-        </button></div>
-        <div class="content-padded">
-        <a style="color: grey" class="navbar-brand" href="userguide.html">User Guide</a></div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img id="logo" src="MedVoice.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a style="color:white" href="guide1.html">Sign Up and Dashboard</a></li>
+          <li><a style="color:white" href="guide1.html">Sign Up and Login</a></li>
           <li><a style="color:white" href="guide2.html">Peer to Peer Chat</a></li>
           <li><a style="color:white" href="guide3.html">Charts</a></li>
           <li><a style="color:white" href="guide4.html">Live Scan</a></li>
           <li><a style="color:white" href="guide5.html">Social Support</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a style="color:white" href="http://dev.medvoicebiotech.com/"><span class="glyphicon glyphicon-log-in"></span> About MedVoice</a></li>
+          <li><a style="color:white" href="MedVoice/login.html"><span class="glyphicon glyphicon-log-in"></span> MedVoice</a></li>
         </ul>
       </div>
     </div>
@@ -91,8 +93,7 @@ padding-top: 10px;
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left">
-      <div class="jumbotron">
-<img src="MedVoice.png" style="width:100%" alt="MedVoice">
+
     <h3 style="color:#488AC7"> Live Scans</h3>
     <p2>MedVoice strives to raise health awareness with social support. Using voice recognition, your
       device's camera and care client inputs, MedVoice has the ability to  display possible health
@@ -100,7 +101,7 @@ padding-top: 10px;
       their health history, and form a social network with care givers and other care clients, and
       view scholarly articles, journals and other media.</p2>
     <hr>
-  </div>
+
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">

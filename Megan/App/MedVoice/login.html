@@ -5,11 +5,15 @@
   <title>MedVoice</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="ratchet/css/ratchet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+  <!-- Optionally, include either the iOS or Android theme -->
+  <link href="ratchet/css/ratchet-theme-android.css" rel="stylesheet">
   <style>
   #logo {
   height:110%;
@@ -54,7 +58,8 @@
       </ul>
       <div class="nav navbar-nav navbar-right">
 
-        <?php if (isset($_SESSION['name'])) {} else { ?><div class= "fb-login-button" style="padding:15px;" data-scope ="public_profile, email" onlogin="checkLoginState();"></div><?php } ?>
+        <?php if (isset($_SESSION['name'])) {} else { ?>
+          <div class= "fb-login-button" style="padding:15px;" data-scope ="public_profile, email" onlogin="checkLoginState();"></div><?php } ?>
         </div>
 
     </div>

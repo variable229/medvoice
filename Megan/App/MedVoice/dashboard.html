@@ -5,8 +5,13 @@
   <title>MedVoice</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="ratchet/css/ratchet.css">
+  <!-- Optionally, include either the iOS or Android theme -->
+  <link href="ratchet/css/ratchet-theme-ios.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -48,11 +53,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="MedVoice_User_Guide/userguide.html"><span class="glyphicon glyphicon-book"></span> User Guide</a></li>
+        <li><a href="MedVoice_User_Guide/guide.html"><span class="glyphicon glyphicon-book"></span> User Guide</a></li>
       <li><a href=""><span class="glyphicon glyphicon-bell"></span> Notifications</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="login2.html"><span class="glyphicon glyphicon-cog"></span> Profile <?php if (isset($_SESSION['name'])) { echo $_SESSION['name']; }?></a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-cog"></span> Profile <?php if (isset($_SESSION['name'])) { echo $_SESSION['name']; }?></a></li>
         <li><a href=""><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
       </ul>
     </div>
@@ -78,7 +83,7 @@
 
 <footer class="container-fluid text-center">
   <nav class="bar bar-tab">
-<a class="tab-item" href="">
+<a class="tab-item" href="#">
     <span class="glyphicon glyphicon-pencil"></span><br>
     <span class="tab-label">Journal</span>
   </a>
