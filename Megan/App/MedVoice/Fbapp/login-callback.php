@@ -25,15 +25,15 @@ if (isset($accessToken)) {
 
   try {
 
-    $requestProfile = $fb->get("/me?fields=name,email");
-    $profile = $requestProfile->getGraphNode()->asArray();
-  } catch(Facebook\Exceptions\FacebookResponseException $e) {
-    // When Graph returns an error
-    echo 'Graph returned an error: ' . $e->getMessage();
-  } catch(Facebook\Exceptions\FacebookSDKException $e) {
-    // When validation fails or other local issues
-    echo 'Facebook SDK returned an error: ' . $e->getMessage();
-  }
+    $response = $fb->get('/me?fields=id,name', $accessToken);
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+  echo 'Graph returned an error: ' . $e->getMessage();
+  exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+  exit;
+}
+
 
 $_SESSION['name'] = $profile['name'];
   header('location: http://megans-macbook-pro.local/medvoice/Megan/App/MedVoice/dashboard.html');
