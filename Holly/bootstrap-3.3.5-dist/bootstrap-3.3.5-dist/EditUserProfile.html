@@ -250,13 +250,13 @@
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">Password:</label>
                                     <div class="col-md-8">
-                                        <input class="form-control" value="11111122333" type="password">
+                                        <input class="form-control" id="password" value="11111122333" type="password">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">Confirm password:</label>
                                     <div class="col-md-8">
-                                        <input class="form-control" value="11111122333" type="password">
+                                        <input id="confirm_password" class="form-control" value="11111122333" type="password">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -275,5 +275,20 @@
         </div>
     </div>
 </div>
+    <script>
+    var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword(){
+    if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+    confirm_password.setCustomValidity('');
+    }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    </script>
 </body>
 </html>

@@ -1,32 +1,96 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Chart Page</title>
+    <title>Result Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         .navbar-default {
             background: rgba(0,0,0,0.4);
         }
 
         body {
-            padding-top: 60px;
-        }
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
+            margin: 0;
+            padding: 0;
+            height: 100%;
         }
 
-        
+        #breadcrumb {
+            padding: 30px;
+        }
+
+        #container {
+            min-height: 100%;
+            position: relative;
+        }
+
+        #header {
+            padding: 10px;
+        }
+
+        #body {
+            padding: 60px;
+        }
+
+        #body2 {
+            padding: 120px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px; /* Height of the footer */
+            background: #555;
+        }
 
         .btn-primary {
             background: #555;
         }
+
+            .btn-primary.round {
+                border-radius: 24px;
+            }
+
+        @media (max-width: 979px) {
+            body {
+                padding-top: 30px;
+            }
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: white;
+        }
+
+        div.navbar ul.nav a {
+            color: white;
+        }
+
+        .social {
+            height: 30px;
+            line-height: 30px;
+            display: table;
+            width: 100%;
+        }
+
+            .social div {
+                display: inline-block;
+                width: 42%;
+                color: #eee;
+                font-size: 12px;
+                text-align: center;
+                border-radius: 3px;
+            }
+
+                .social div i.fa {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
     </style>
 </head>
 <body style="height:1500px">
@@ -48,53 +112,79 @@
                 </div>
                 <div class="navbar-collapse collapse" id="header-body">
                     <ul class="nav navbar-nav">
-                        <li><a style="color:white" href="#">Browse Our Library</a></li>
-                        <li><a style="color:white" href="#">About Us</a></li>
-                        <li><a style="color:white" href="#">Contact Us</a></li>
-                        <li><a style="color:white" href="#">Our Partners</a></li>
-                        <li><a style="color:white" href="#">User Review</a></li>
-                        <li><a style="color:white" href="#">Terms &amp; Conditions</a></li>
-                        <li><a style="color:white" href="#">Privacy Policy</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
 
         </div>
     </div>
+    <div id="container">
+        <div id="header">
+            <div class="jumbotron">
+                <div id="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="#">User Guide</a></li>
+                        <li><a href="Journal.html">Journal</a></li>
+                        <li><a href="Chart.html">Chart</a></li>
+                        <li class="active">Result</li>
+                    </ol>
+                </div>
+                <img src="MedVoice.png" style="width:100%" alt="MedVoice">
 
-    <div class="jumbotron">
-        <ol class="breadcrumb">
-            <li><a href="#">User Guide</a></li>
-            <li><a href="Journal.html">Journal</a></li>
-            <li><a href="Chart.html">Chart</a></li>
-            <li class="active">Result</li>
-        </ol>
-        <img src="MedVoice.png" style="width:100%" alt="MedVoice">
-        <h2 style="color:#488AC7"> Result</h2>
-        <p2>
-           The Result page displays each major body categories and a check mark or "X" to denote whether there may or may not be a problem.  
-        </p2>
-        <hr>
-        <div class="col-lg-6">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Submit</button>
-                </span>
+                <div id="body">
+                    <h2 style="color:#488AC7"> Result</h2>
+                    <p2>
+                        The Result page displays each major body categories and a check mark or "X" to denote whether there may or may not be a problem.
+                    </p2>
+                    <hr>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Submit</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 style="color:#488AC7"> CONTACT CUSTOMER SUPPORT</h3>
+                <p2>
+                    If you can't find the answer you're looking for, please use this form to send us your information and question(s)
+                </p2>
+                <button type="button" class="btn btn-primary">CONTACT US</button>
+                <hr>
             </div>
-        </div>
+            <div class="container">
+                <div id="body">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email address to subscribe to our newsletter">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Subscribe</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </div>
 
-    <h3 style="color:#488AC7"> CONTACT CUSTOMER SUPPORT</h3>
-    <p2>
-        If you can't find the answer you're looking for, please use this form to send us your information and question(s)
-    </p2>
-    <button type="button" class="btn btn-primary">CONTACT US</button>
-    <hr>
-    <div id="footer">
-        <div class="container text-center">
-            <p>COPYRIGHT 2015. ALL RIGHTS RESERVED.</p>
+            <div id="body2">
+                <h3> Find us at:</h3>
+                <div class="social">
+                    <a class="btn btn-primary round btn" href="#"> <i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-primary round btn" href="#"> <i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-primary round btn" href="#"> <i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-primary round btn" href="#"> <i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="footer" class="text-center">
+
+                <p style="color:white">COPYRIGHT 2015. ALL RIGHTS RESERVED.</p>
+            </div>
         </div>
     </div>
 </body>
