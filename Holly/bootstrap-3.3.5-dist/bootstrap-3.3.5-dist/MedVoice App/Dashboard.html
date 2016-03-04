@@ -3,13 +3,58 @@
 <head>
     <title>Dashboard</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ratchet/css/ratchet.css">
+    <link href="ratchet/css/ratchet-theme-ios.css" rel="stylesheet">
+    <script src="phonegap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+
+google.charts.load('current', { packages: ['corechart', 'line'] });
+        google.charts.setOnLoadCallback(drawBackgroundColor);
+        backgroundColor: 'white';
+        function drawBackgroundColor() {
+            var data = new google.visualization.DataTable();
+           
+            data.addColumn('number', 'X');
+            data.addColumn('number', '');
+
+            data.addRows([
+              [0, 0], [1, 10], [2, 20], [3, 20], [4, 18], [5, 10],
+              [6, 11], [7, 27], [8, 33], [9, 40], [10, 32], [11, 35],
+              [12, 30], [13, 40], [14, 42], [15, 47], [16, 44], [17, 48],
+              [18, 52], [19, 54], [20, 42], [21, 55], [22, 56], [23, 57],
+              [24, 60], [25, 50], [26, 52], [27, 51], [28, 49], [29, 53],
+              [30, 55], [31, 60], [32, 61], [33, 59], [34, 62], [35, 65],
+              [36, 62], [37, 58], [38, 55], [39, 61], [40, 64], [41, 65],
+              [42, 63], [43, 66], [44, 67], [45, 69], [46, 69], [47, 70],
+              [48, 72], [49, 68], [50, 66], [51, 65], [52, 67], [53, 70],
+              [54, 71], [55, 72], [56, 73], [57, 75], [58, 70], [59, 68],
+              [60, 64], [61, 60], [62, 65], [63, 67], [64, 68], [65, 69],
+              [66, 70], [67, 72], [68, 75], [69, 80]
+            ]);
+
+            var options = {
+                hAxis: {
+                    title: 'Days'
+                },
+                vAxis: {
+                    title: 'MedVoice Score'
+                },
+                backgroundColor: '#f1f8e9'
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        } </script>
     <style>
         .navbar-default {
             background-color: #B22222;
@@ -31,12 +76,18 @@
                 padding-top: 0px;
             }
         }
+
         .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-         div.navbar-collapse ul.navbar-nav li a {
-         color:white;
-     }
+            background-color: white;
+        }
+
+        div.navbar-collapse ul.navbar-nav li a {
+            color: white;
+        }
+          footer {
+      background-color: #f2f2f2;
+
+    }
     </style>
 </head>
 <body style="height:1500px">
@@ -66,6 +117,7 @@
                     <li><a href="ProfilePage.html">Profile</a></li>
                     <li><a href="EditUserProfile.html">Edit Profile</a></li>
                     <li><a href="ResultPage.html">Result Page</a></li>
+                    <li><a href="ResultHistory.html">Result History</a></li>
                     <li><a href="http://dev.medvoicebiotech.com/">Terms &amp; Conditions</a></li>
                 </ul>
             </div>
@@ -145,25 +197,34 @@
             </a>
         </div>
     </div>
-    
-    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-        <div class="col-xs-8 col-sm-4">
-            <div id="search">
-                <input type="text" placeholder="CHECK DISEASE" />
-                <a class="btn btn-default" href="#">
-                    <i class="fa fa-search"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="btn-group pull-right">
-            <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-facetime-video"></span>
-            </button>
-            <a class="btn btn-default" href="#">
-                <i class="fa fa-microphone"></i>
-            </a>
-        </div>
+    <div class="container">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <div id="chart_div"></div>
     </div>
+    <footer>
+        <nav class="bar bar-tab">
+            <a class="tab-item" href="#">
+                <span class="glyphicon glyphicon-pencil"></span><br>
+                <span class="tab-label">Journal</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="glyphicon glyphicon-user"></span><br>
+                <span class="tab-label">P2P</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="glyphicon glyphicon-picture"></span><br>
+                <span class="tab-label">Charts</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="glyphicon glyphicon-facetime-video"></span><br>
+                <span class="tab-label">Scan</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="glyphicon glyphicon-list-alt"></span><br>
+                <span class="tab-label">News</span>
+            </a>
+        </nav>
+    </footer>
+    <script src="phonegap.js"></script>
 </body>
 </html>

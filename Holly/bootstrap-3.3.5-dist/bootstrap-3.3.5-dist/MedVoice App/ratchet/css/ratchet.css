@@ -9,6 +9,7 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -525,19 +526,22 @@ input[type="button"] {
 .bar-nav {
   top: 0;
 }
-
+.login{
+  padding-top: 30px;
+}
 .title {
   position: absolute;
   display: block;
   width: 100%;
   padding: 0;
   margin: 0 -10px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 44px;
-  color: #000;
+  line-height: 46px;
+  color: #848484;
   text-align: center;
   white-space: nowrap;
+
 }
 
 .title a {
@@ -1070,6 +1074,7 @@ select {
   border-top-right-radius: 12px;
   -webkit-box-shadow: none;
           box-shadow: none;
+
 }
 
 .popover .table-view {
@@ -1269,7 +1274,7 @@ select {
   font-size: 24px;
   line-height: 1;
   text-decoration: none;
-
+  color: #848484;
   -webkit-font-smoothing: antialiased;
 }
 
