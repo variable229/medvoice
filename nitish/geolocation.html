@@ -1,6 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GeoLocation</title>
 
+  <style>
+    html, body, #map {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
 
-// Show the user's position on a Google map.
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  // Show the user's position on a Google map.
 function showMap(lat, lon) {
 	// Create a LatLng object with the GPS coordinates.
 	var myLatLng = new google.maps.LatLng(lat, lon);
@@ -22,3 +38,5 @@ function showMap(lat, lon) {
       title: 'Found you!'
   });
 }
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+ <head>
+ </head>
+  <body>
+<script type="text/javascript">
+/*if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+   {
+  var lat = position.coords.latitude;
+  var lang = position.coords.longitude;
+  var coords = new google.maps.LatLng(mylat, mylong);*/
+  
+  function success(position)  {
+		
+		// fetch the coordinates
+		
+		var lat = position.coords.latitude;
+		var lang = position.coords.longitude;
+		
+		// google-API-ready latitude and longitude string
+		
+		var coords = new google.maps.LatLng(lat, lang);
+		}
+$.ajax({
+        type: "POST", 
+        url:  "locations-test.php", 
+        data: 'lat='+lat+'&lang='+lang,
+        });  
+ });
+} 
+</script>
+
+
+
+
+<div class="container"><input type='button' onclick='MakeRequest();' value='Get List'/></div>
+<div class="container"><div id="listarea">
+</div></div></div>
+</body>
+</html>

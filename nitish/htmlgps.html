@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset=utf-8" >
+      <title>navigator</title>
+</head>
+<script type="text/javascript"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+<script>
+function position()
+{
+     if( navigator.geolocation )
+     {
+          navigator.geolocation.getCurrentPosition( win, fail );
+     }
+     else
+     {
+          alert("No, you don't can has browzer support");
+     }
+}
+ 
+function win(youare)
+{
+var longi;
+longi=document.value = youare.coords.longitude;
+var lati;
+lati=document.value = youare.coords.latitude
+var myDiv1 = document.getElementById("loco");
+myDiv1.appendChild(document.createTextNode(lati));
+myDiv1.appendChild(document.createTextNode(","));
+myDiv1.appendChild(document.createTextNode(longi));
+}
+function fail()
+{
+	//didntwork
+}
+</script> 
+
+ 
+<body onLoad="position();">
+<div id="loco"></div>
+  </body>
+</html>
