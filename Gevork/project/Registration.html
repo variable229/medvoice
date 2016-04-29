@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            img {
+                max-width: 100%;
+            }
+        </style>
+        <title>Registration</title>
+        <meta charset="utf-8">
+
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+
+        <!-- Include the compiled Ratchet CSS -->
+        <link rel="stylesheet" href="css/ratchet.css">
+        
+        <!-- Include Glyphicons from Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+   
+
+        <!-- Include the compiled Ratchet JS -->
+        <script src="js/ratchet.js"></script>
+        
+    </head>
+    <body>
+            <!-- Make sure all your bars are the first things in your <body> -->
+            <header class="bar bar-nav" style="background-color:red">
+                <h1 class="title">
+                    <img src="medvoice.jpg" style="height:100%; vertical-align:bottom">
+                </h1>
+                <a class="icon icon-gear pull-right"></a>
+            </header>
+
+            <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+            <div class="content" style="background: url(office.jpg) no-repeat fixed center">
+                
+                <div style="padding-bottom:10;padding-top:10">
+                    <center>
+                        <h3 style="color:white">Create a profile to continue</h3>
+                        </center>
+                </div>
+                <center>
+                    <form class="input-group" style="width:45%">
+                        <div class="input-row">
+                            <label>First name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-row">
+                            <label>Last name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-row">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="input-row">
+                            <label>Username</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-row">
+                        <label>Password</label>
+                            <input type="password">
+                        </div>
+                        <div class="input-row">
+                        <label>Reenter Password</label>
+                            <input type="password">
+                        </div>
+                    </form>
+                </center>
+                
+                <div>
+                    <center>
+                        <button type="button" class="btn btn-primary">Back</button>
+                        <button type="button" class="btn btn-danger">Sign Up</button>
+                    </center>
+                </div>
+                
+            </div>
+        
+    </body>
+</html>
