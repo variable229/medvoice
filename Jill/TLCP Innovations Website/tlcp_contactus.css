@@ -1,6 +1,7 @@
 /* Banner gradient */
 
 .background {
+    width: 100%;
     background:
         linear-gradient(
         rgba(51, 102, 153, 0.5),
@@ -153,7 +154,7 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.0em;
-        padding: 20px 10px 20px 20px;
+        padding: 20px 10px 20px 5px;
     }
 }
 
@@ -162,7 +163,7 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.0em;
-        padding: 20px 190px 20px 20px;
+        padding: 20px 100px 20px 80px;
     }
 }
 
@@ -171,7 +172,17 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.0em;
-        padding: 40px 300px 40px 40px;
+        padding: 40px 140px 40px 160px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #text {
+        top: 150px;
+        left: 15px;
+        font-size: 5.0em;
+        padding: 40px 0px 40px 140px;
     }
 }
 
@@ -180,16 +191,7 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.0em;
-        padding: 40px 530px 40px 120px;
-    }
-}
-
-@media screen and (min-width:1025px) {
-    #text {
-        top: 150px;
-        left: 15px;
-        font-size: 5.0em;
-        padding: 40px 530px 40px 140px;
+        padding: 40px 260px 40px 300px;
     }
 }
 
@@ -198,7 +200,7 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.5em;
-        padding: 60px 710px 60px 160px;
+        padding: 60px 350px 60px 400px;
     }
 }
 
@@ -207,16 +209,25 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.5em;
-        padding: 60px 800px 60px 200px;
+        padding: 60px 300px 60px 430px;
     }
 }
 
-@media screen and (min-width:1366px) {
+@media screen and (min-width:1360px) {
     #text {
         top: 150px;
         left: 15px;
         font-size: 5.5em;
-        padding: 60px 800px 60px 200px;
+        padding: 60px 400px 60px 450px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #text {
+        top: 150px;
+        left: 15px;
+        font-size: 5.5em;
+        padding: 60px 410px 60px 500px;
     }
 }
 
@@ -225,7 +236,7 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.5em;
-        padding: 60px 1100px 60px 260px;
+        padding: 60px 570px 60px 580px;
     }
 }
 
@@ -234,7 +245,13 @@ footer a:hover{
         top: 150px;
         left: 15px;
         font-size: 5.5em;
-        padding: 60px 1300px 60px 280px;
+        padding: 60px 650px 60px 700px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    #text {
+        text-align: center;
     }
 }
 

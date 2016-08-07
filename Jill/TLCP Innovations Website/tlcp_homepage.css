@@ -147,6 +147,34 @@ footer a:hover{
         top: 880px;
 }
 
+@media screen and (min-width:1280px) {
+    #gototop {
+        right:50px;
+        top: 700px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #gototop {
+        right: 50px;
+        top: 800px;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    #gototop {
+        right: 50px;
+        top: 880px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    #gototop {
+        right: 100px;
+        top: 1200px;
+    }
+}
+
 span.glyphicon-chevron-up {
     font-size: 1.5em;
     color: #00264d;
@@ -345,6 +373,14 @@ span.glyphicon-chevron-up {
     height:50px;
     top:0;
     vertical-align: middle;
+}
+
+.img-rounded {
+  border-radius: 6px;
+}
+
+.img-rounded:active{
+    text-decoration: none;
 }
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -1477,9 +1513,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.img-rounded {
-  border-radius: 6px;
-}
+
 .img-thumbnail {
   display: inline-block;
   max-width: 100%;
