@@ -98,7 +98,18 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 92%;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-size: 4.0em;
+    }
+}
+
+@media screen and (min-width:412px) {
+    .text {
+        top: 100px;
+        left: 15px;
+        width: 93%;
         text-align: center;
         padding: 20px 0px 20px 0px;
         font-size: 4.0em;
@@ -119,7 +130,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 96%;
         text-align: center;
         padding: 30px 80px 30px 140px;
     }
@@ -129,7 +140,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 97%;
         text-align: center;
         padding: 40px 200px 40px 200px;
     }
@@ -150,7 +161,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 98%;
         text-align: center;
         padding: 60px 240px 60px 210px;
         font-size: 6.0em;
@@ -161,7 +172,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 98%;
         text-align: center;
         padding: 60px 280px 60px 350px;
     }
@@ -182,7 +193,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 100%;
         text-align: center;
         padding: 80px 500px 80px 580px;
         font-size: 6.0em;
@@ -193,7 +204,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 99%;
         text-align: center;
         padding: 80px 900px 80px 850px;
         font-size: 6.0em;

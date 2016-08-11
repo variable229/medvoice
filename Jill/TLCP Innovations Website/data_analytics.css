@@ -45,7 +45,22 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 92%;
+        text-align: center;
+        padding: 20px 25px 20px 25px;
+        font-size: 4.5em;
+    }
+    
+    .background {
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width:412px) {
+    .text {
+        top: 100px;
+        left: 15px;
+        width: 93%;
         text-align: center;
         padding: 20px 25px 20px 25px;
         font-size: 4.5em;
@@ -60,7 +75,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 100%;
         text-align: center;
         padding: 20px 100px 20px 110px;
     }
@@ -70,7 +85,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 96%;
         text-align: center;
         padding: 30px 160px 30px 180px;
     }
@@ -101,7 +116,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 100%;
         text-align: center;
         padding: 60px 300px 60px 410px;
         font-size: 6.0em;

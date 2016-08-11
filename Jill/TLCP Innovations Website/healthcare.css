@@ -97,7 +97,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 92%;
         text-align: center;
         padding: 20px 15px 20px 20px;
         font-size: 4.0em;
@@ -108,7 +108,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 93%;
         text-align: center;
         padding: 20px 30px 20px 45px;
         font-size: 4.0em;
@@ -130,7 +130,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 93%;
         text-align: center;
         padding: 20px 45px 20px 45px;
         font-size: 4.5em;
@@ -151,7 +151,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 96%;
         text-align: center;
         padding: 30px 220px 30px 240px;
     }
@@ -161,7 +161,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 97%;
         text-align: center;
         padding: 40px 350px 40px 360px;
     }
@@ -171,7 +171,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 100%;
         text-align: center;
         padding: 60px 400px 60px 440px;
         font-size: 6.0em;
@@ -182,7 +182,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 99%;
         text-align: center;
         padding: 60px 400px 60px 480px;
         font-size: 6.0em;
@@ -193,7 +193,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 98%;
         text-align: center;
         padding: 60px 470px 60px 540px;
     }
@@ -214,7 +214,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 100%;
         text-align: center;
         padding: 80px 710px 80px 770px;
         font-size: 6.0em;
@@ -225,7 +225,7 @@
     .text {
         top: 100px;
         left: 15px;
-        max-width: 100%;
+        width: 99%;
         text-align: center;
         padding: 80px 1050px 80px 1080px;
         font-size: 6.0em;
