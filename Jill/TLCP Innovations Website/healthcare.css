@@ -11,6 +11,9 @@
 
 
 .background {
+    background: -webkit-linear-gradient(bottom right, rgba(0, 153, 153, 0.3), rgba(0, 153, 153, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(0, 153, 153, 0.3), rgba(0, 153, 153, 0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(0, 153, 153, 0.3), rgba(0, 153, 153, 0)); /* For Firefox 3.6 to 15 */
     background:
         linear-gradient(
         rgba(0, 153, 153, 0.3),
@@ -86,6 +89,9 @@
     font-weight: bold;
     font-size: 5.5em;
     color: white;
+    background: -webkit-linear-gradient(bottom right, rgba(0, 153, 153, 0.7), rgba(0, 153, 153, 0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(0, 153, 153, 0.7), rgba(0, 153, 153, 0.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(0, 153, 153, 0.7), rgba(0, 153, 153, 0.2)); /* For Firefox 3.6 to 15 */
     background:
         linear-gradient(
         rgba(0, 153, 153, 0.7),
