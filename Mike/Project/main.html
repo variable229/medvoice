@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- THIS VERSION USES RADIO BUTTONS -->
 <html>
 	<head>
 		<meta charset='utf-8'>
@@ -7,7 +6,7 @@
 		<title>
 			MySearch thing
 		</title>
-		<link href="css/style..css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body class='index'>
@@ -17,20 +16,29 @@
 				<h1>Search</h1>
 				<h2>Maybe it works</h2>
 			</header>        
+			<a  ng-href="main2.html"  target="_self">Advance Search</a>
+			<a  ng-href="junk.html"  target="_self">Graphs</a>
 			<section class='searchField'>          
 				<form ng-submit='search()'>
 					<input ng-model='searchTerm' type='text'>
 					<input type='submit' value='Search!'> <br/>
-					<input type="radio" ng-model='slt' value="_all" > All <br/>
-					<input type="radio" ng-model='slt' value="first_name"> First Name <br/>
-					<input type="radio" ng-model='slt' value="last_name"> Last Name <br/>
-					<input type="radio" ng-model='slt' value="email"> Email <br/>
-					<input type="radio" ng-model='slt' value="gender"> Gender <br/>
-					<input type="radio" ng-model='slt' value="ip_address"> Ip Address <br/>
-
-				</form>
+						<div id="check">
+							<input id="basicCheck" type="checkbox" ng-model="slt[0]" />
+							<span class="valueItems"><strong>First:</strong> {{slt[0]}}</span><br />
+							<input id="basicCheck" type="checkbox" ng-model="slt[1]" />
+							<span class="valueItems"><strong>Last:</strong> {{slt[1]}}</span><br />
+							<input id="basicCheck" type="checkbox" ng-model="slt[2]" />
+							<span class="valueItems"><strong>Gender:</strong> {{slt[2]}}</span><br />
+							<input id="basicCheck" type="checkbox" ng-model="slt[3]" />
+							<span class="valueItems"><strong>Email:</strong> {{slt[3]}}</span><br />
+							<input id="basicCheck" type="checkbox" ng-model="slt[4]" />
+							<span class="valueItems"><strong>IP:</strong> {{slt[4]}}</span><br />
+						</div>
+					</form>
 			</section>
-
+			<p>
+				Hits: {{hits.length}}
+			</p>
 			<section class='results'>
 				<div class='no-results' ng-hide='hits.length'>No results</div>
 				<article class='hit' ng-cloak ng-repeat='hit in hits'>
@@ -53,6 +61,6 @@
 		</div>
 		<script src="bower_components/angular/angular.js" type="text/javascript"></script>
 		<script src="bower_components/elasticsearch/elasticsearch.angular.js" type="text/javascript"></script>
-		<script src="js/script.js" type="text/javascript"></script>
+		<script src="js/script3.js" type="text/javascript"></script>
 	</body>
 </html>
