@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- tHIS VERSION USES MULTIPLE TEXT INPUTS-->
 <html>
 	<head>
 		<meta charset='utf-8'>
@@ -16,25 +15,50 @@
 			<header>
 				<h1>Search</h1>
 				<h2>Maybe it works</h2>
-			</header>        
+			</header>  
+			<a ng-href="main.html"  target="_self">Search</a>
+			<a ng-href="junk.html"  target="_self">Graphs</a>
 			<section class='searchField'>          
 				<form ng-submit='search()'>
 					<p>
+						<input id="basicCheck" type="checkbox" ng-model="slt[0]" />
 						First Name:<input ng-model='searchTerm[0]' type='text'><br/>
+						<input id="basicCheck" type="checkbox" ng-model="slt[1]" />
 						Last Name:<input ng-model='searchTerm[1]' type='text'> <br/>
+						<input id="basicCheck" type="checkbox" ng-model="slt[2]" />
 						Gender:<input ng-model='searchTerm[2]' type='text'> <br/>
+						<input id="basicCheck" type="checkbox" ng-model="slt[3]" />
+						Country:<input ng-model='searchTerm[3]' type='text'> <br/>
+						<input id="basicCheck" type="checkbox" ng-model="slt[4]" />
+						Email:<input ng-model='searchTerm[4]' type='text'> <br/>
+						<input id="basicCheck" type="checkbox" ng-model="slt[5]" />
+						IP:<input ng-model='searchTerm[5]' type='text'> <br/>
+						
+						<input id="basicCheck" type="checkbox" ng-model="slt[6]" />
+						<span class="valueItems"><strong>Age:</strong> {{range[0]}} to {{range[1]}}</span><br />
+						<p>Min:<input type="range" value="30" min=0 max=100 ng-model="range[0]"/><br /></p>
+						<p>Max:<input type="range" value="30" min=0 max=100 ng-model="range[1]"/><br /></p>
+							
+						<input id="basicCheck" type="checkbox" ng-model="slt[7]" />
+						<span class="valueItems"><strong>Health Rating:</strong> {{range[2]}} to {{range[3]}}</span><br />
+						<p>Min:<input type="range" value="30" min=0 max=10 ng-model="range[2]"/><br /></p>
+						<p>Max:<input type="range" value="30" min=0 max=10 ng-model="range[3]"/><br /></p>
 						<input type='submit' value='Search!'> <br/>
 					</p>
-
 				</form>
 			</section>
-
+			<p>
+				Hits: {{hits.length}}
+			</p>
 			<section class='results'>
 				<div class='no-results' ng-hide='hits.length'>No results</div>
 				<article class='hit' ng-cloak ng-repeat='hit in hits'>
 					<p>
 						Name: {{hit.first_name}} {{hit.last_name}} </br>
 						Gender: {{hit.gender}}</br>
+						Age: {{hit.age}}</br>
+						Country: {{hit.country}}</br>
+						Health Rating: {{hit.health_rating}}</br>
 						Email: {{hit.email}}</br>
 						IP: {{hit.ip_address}}</br>
 					</p>
