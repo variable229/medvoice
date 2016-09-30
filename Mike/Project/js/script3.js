@@ -16,6 +16,8 @@ MyOpenSearch.factory('hitservice',
         var client = elasticsearch({
             host: $location.host() + ":9200"
         });
+		
+		
 
         /**
          * Given a term and an offset, load another round of 10 hits.
@@ -24,6 +26,8 @@ MyOpenSearch.factory('hitservice',
          */
         var search = function(term, num, offset){
             var deferred = $q.defer();
+			var zero = 0;
+
 			var query = {
 				"bool":{
 					"should":[
@@ -35,17 +39,16 @@ MyOpenSearch.factory('hitservice',
 						{"match": {"ip_address": term[5]}},
 						{"range":{"age": {"gte":term[6],"lte":term[7]}}},
 						{"range":{"health_rating": {"gte":term[8],"lte":term[9]}}},	
-					], "minimum_should_match": num
+					], 
 				}
 			};
-	
-			
+
             client.search({
                 "index": 'logstash*',
                 "type": 'logs', 
                 "body": {
-                    "size": 10,
-                    "from": (offset || 0) * 10,
+                    "size": 1000,
+                    "from": (offset || 0) * 1000,
                     "query": query
                 }
             }).then(function(result) {
@@ -74,75 +77,66 @@ MyOpenSearch.controller('searchCtrl',
     ['hitservice', '$scope', '$location', function(hits, $scope, $location){
         // Provide some nice initial choices
 
-
+      
 
         // Initialize the scope defaults.
         $scope.hits = [];        // An array of recipe results to display
-		$scope.searchTerm = [];
-        $scope.page = 0;            // A counter to keep track of our current page
-        $scope.num = 0;			
-		$scope.term = [];
-		$scope.slt = [];
+        $scope.slt = [];
+        $scope.term = [];
+		$scope.number = "12";		
 		$scope.range = [0,100,0,10];
-		$scope.allResults = false;  // Whether or not all results have been found.
+		$scope.page = 0;            // A counter to keep track of our current page
+        $scope.allResults = false;  // Whether or not all results have been found.
 
-
-		
-
-		
         /**
          * A fresh search. Reset the scope variables to their defaults, set
          * the q query parameter, and load more results.
          */
         $scope.search = function(){
 			$scope.page = 0;
-			$scope.num = 0;
             $scope.hits = [];
-
             $scope.allResults = false;
-			
             $location.search({'q': $scope.searchTerm});
-
+            
 			if($scope.slt[0]){
-				$scope.term[0] = $scope.searchTerm[0];
-				$scope.num += 1;
+				$scope.term[0] = $scope.searchTerm;
+
 			}else{
 				$scope.term[0] = "";
 			}
 			if($scope.slt[1]){
-				$scope.term[1] = $scope.searchTerm[1];
-				$scope.num += 1;
+				$scope.term[1] = $scope.searchTerm;
+
 			}else{
 				$scope.term[1] = "";
 			}
 			if($scope.slt[2]){
-				$scope.term[2] = $scope.searchTerm[2];
-				$scope.num += 1;
+				$scope.term[2] = $scope.searchTerm;
+
 			}else{
 				$scope.term[2] = "";
 			}
 			if($scope.slt[3]){
-				$scope.term[3] = $scope.searchTerm[3];
-				$scope.num += 1;
+				$scope.term[3] = $scope.searchTerm;
+
 			}else{
 				$scope.term[3] = "";
 			}
 			if($scope.slt[4]){
-				$scope.term[4] = $scope.searchTerm[4];
-				$scope.num += 1;
+				$scope.term[4] = $scope.searchTerm;
+
 			}else{
 				$scope.term[4] = "";
 			}
 			if($scope.slt[5]){
-				$scope.term[5] = $scope.searchTerm[5];
-				$scope.num += 1;
+				$scope.term[5] = $scope.searchTerm;
+
 			}else{
 				$scope.term[5] = "";
 			}
 			if($scope.slt[6]){
 				$scope.term[6] =  $scope.range[0];
 				$scope.term[7] = $scope.range[1];
-				$scope.num += 1;
 			}else{
 				$scope.term[6] =  0;
 				$scope.term[7] = 0;
@@ -150,11 +144,13 @@ MyOpenSearch.controller('searchCtrl',
 			if($scope.slt[7]){
 				$scope.term[8] =  $scope.range[2];
 				$scope.term[9] = $scope.range[3];
-				$scope.num += 1;
+
 			}else{
+
 				$scope.term[8] =  0;
 				$scope.term[9] = 0;
-			}		
+			}
+			
 			$scope.loadMore();
 
         };
@@ -172,6 +168,7 @@ MyOpenSearch.controller('searchCtrl',
 
                 var ii = 0;
                 for(;ii < results.length; ii++){
+					
                     $scope.hits.push(results[ii]);
                 }
             });
